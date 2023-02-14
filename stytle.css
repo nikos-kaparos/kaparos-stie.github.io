@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+:root{
+    --vivaMagenta: #BB2649 ;
+}
+
+body{
+    font-family: Lato, sans-serif;
+    margin: 0;
+    background-color: #232e33;
+}
+
+#navbar{
+    width: auto;
+    background-color: flex;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.home{
+    height: 850px; 
+    width: auto;
+}
+
+
+#intro li a{
+    text-decoration: none;
+    color: white;
+    padding-right: 3em;
+    position: relative;
+    transition: all ease-in-out 250ms;
+}
+
+#intro li a::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 0%;
+    background-color:var(--vivaMagenta);
+    bottom: -1em;
+    transition: all ease-in-out 250ms;
+}
+
+#intro li a:hover::after{
+    width: 60%;
+}
+
+#intro li a:hover{
+    color:var(--vivaMagenta);
+}
+
+#intro li:first-child{
+    margin-right: auto;
+    margin-left: 3em;
+}
+
+.intro-section{
+    margin-bottom: 500px;
+}
+
+.center{
+    max-width: 10%;
+    height: auto;
+    display: flex;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 7px solid;
+    object-position: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.hidden {
+    opacity:0;
+  }
+
+.console-container {
+    font-family: 'Dejavu sans mono';
+    font-weight: bold;
+    font-size:2em;
+    text-align:center;
+    height:auto;
+    width:600px;
+    display:block;
+    position:absolute;
+    color:white;
+    top:700px;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.console-underscore {
+    display:inline-block;
+    position:relative;
+    top: 10px;
+    left:10px;
+}
+
+#about-section{
+    margin: auto;
+    background-color: black;
+}
+
+.about-content h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: white;
+    font-family: 'Dejavu sans mono';
+    font-style: normal;
+    margin-top: 3rem;
+}
+.about-content p{
+    display: inline-block;
+    max-width: 500px;
+    margin: 100px auto;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    color: white;
+    position: relative;
+    right: 15rem;    bottom: 5rem; 
+    margin-top: 150px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.download-bnt{
+    border-radius: 5px;
+    font: 16px/30px "opensans-bold", sans-serif;
+    background: #1e852f;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 0;
+    color: #fff;
+    padding: 12px 20px;
+    margin-bottom: 18px;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    margin-bottom: 50px;
+    margin-left: 510px;    
+}
+
+.button-download :hover{
+    background-color: white;
+    color: #008F11;
+}
+
+#achievements-section{
+    margin-bottom: 50px;
+}
+
+#achievements-section h2{
+    color: #008F11;
+    position: relative;
+    text-align: center;
+}
+
+.achievements-text-p1{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    text-align: left;
+    white-space: pre;
+    margin-left: 680px;
+}
+.achievements-text-p2{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    text-align: left;
+    white-space: pre;
+    margin-left: 700px;
+}
+
+#footer-section{
+    position: relative;
+    background: #111;
+    height: auto;
+    left: 0;
+    right: 0;
+    width: auto;
+    padding-top: auto;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.footer-content h1{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #008F11;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 16px;
+    color: #4e4d4d;
+}
+
+.footer-content a{
+    color: #4e4d4d;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#footer-section .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+#footer-section .socials li{
+    margin: 0 30px;
+}
+
+#footer-section .socials li a{
+    text-decoration: none;
+    color: #008F11;
+    font-size: 30px;
+}
+
+#footer-section .credit{
+    background-color: #000;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer-section .credit p{
+    text-align: center;
+    font-size: 14px;
+    word-wrap: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+
+#footer-section .credit p a{
+    color: #44bae8;
+    font-size: 16px;
+    text-decoration: none;
+}
+/*Responsive for laptop*/
+@media screen and (max-width:1400px){
+    .console-container{ 
+        width: auto;
+        top: 550px;
+    }
+    .center{
+        max-width: 30%;
+        margin-top: 50px;
+    }
+    .about-content p{
+        right: 30rem;
+        margin-right: 5rem;
+    }
+    .download-bnt{
+        padding: 10px 91px;;
+        margin-left: 50px;
+        margin: auto 42px;
+        margin-bottom: 30px;
+    }
+    .achievements-text-p1{
+        margin-left: 120px;
+        line-height: 50px;
+        font-family: 'Open Sans';
+    }
+    .achievements-text-p2{
+        margin-left: 140px;
+        line-height: 30px;
+    }
+}
+/*Responsive for tablets*/
+@media screen and (max-width:1023px){
+    .console-container{ 
+        width: auto;
+        top: 500px;
+    }
+    .center{
+        max-width: 30%;
+        margin-top: 50px;
+    }
+    .about-content p{
+        right: 10rem;
+        margin-right: 5rem;
+    }
+    .download-bnt{
+        padding: 10px 91px;;
+        margin: auto 70px;
+        margin-bottom: 30px;
+    }
+    .achievements-text-p1{
+        margin-left: -20px;
+        line-height: 50px;
+        font-family: 'Open Sans';
+    }
+    .achievements-text-p2{
+        margin-left: 0;
+        line-height: 30px;
+    }
+}
+
+/* /*Responsive for phone 768px*/
+@media screen and (max-width:768px){
+    .console-container{
+        width: auto;
+        top: 500px;
+    }
+    .center{
+        max-width: 30%;
+        margin-top: 200px;
+    }
+    .about-content p{
+        right: -3rem;
+        margin-right: 5rem;
+    }
+    .download-bnt{
+        padding: 5px 20px;;
+        margin-left: 34px;
+        margin: auto 50px;
+        margin-bottom: 30px;
+    }
+    .achievements-text-p1{
+        margin-left: -110px;
+        line-height: 50px;
+        font-family: 'Open Sans';       
+    }
+    .achievements-text-p2{
+        margin-left: -70px;
+        line-height: 30px;
+    }
+}
+
+
+
+
+
